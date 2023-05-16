@@ -1,0 +1,874 @@
+<!--
+    Bonjour à toi ! 
+    Ce mini projet à été conçu par les étudiants de la formation "Développeur web et web mobile" (2023) du Greta Sud Champagne de Troyes
+    lors du premier mois d'apprentissage, nous avons tout simplement utilisés du HTML/CSS ainsi que le Framework Bootstrap. Lors de nos prochains projets,
+    nous aurons évolués vers de nouvelles techno' et ferons encore mieux.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formation</title>
+        <link rel="shortcut icon" href="./Sources/Icones/computer1_77902.ico" type="image/x-icon">
+        <!-- CDN Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="./Sources/Styles/Scss/index.scss" rel="stylesheet">
+        <link rel="stylesheet" href="./Sources/Styles/Css/style.css">
+    </head>
+    <body>
+        <!-- CDN Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-4" href="#">
+                        <img style="width: 12rem;" src="./Sources/Images/Logo.png" alt="Logo_du_Greta">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link fs-5" href="#Video">Présentation</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link fs-5" href="#Formation">Formation</a>
+                        </li>
+                        
+                        <li class="nav-item mx-4">
+                            <a class="nav-link fs-5" href="#Infos">Informations</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link fs-5" href="#Bio">Biographies</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+       <main>
+            <!-- Section titre -->
+            <section>
+                <div class="container-fluid">
+                    <div id="divTitre" class="row p-5">
+                        <div class="col-12">
+                            <h1 class="text-center">Développeur Web et Web Mobile</h1>
+                        </div>
+                        <div class="col-12">
+                            <h2 id="h2" class="text-center">Session 2023</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="mt-5 d-lg-flex justify-content-lg-center">
+                                <a href="#Video">
+                                    <svg id="Icone_arrow" xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section vidéo -->
+            <section id="Video">
+                <div class="container">
+                    <div class="row">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="./Sources/Video/VID_20230320_100531.mp4" title="Video" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN Section vidéo -->
+
+            <!-- Section présentation de la formation -->
+            <section id="Formation" class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h2 class="h2 shadow">La Formation</h2>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-12">
+                            <div>
+                                <h3><u>Raison d'être/départ</u></h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <p>La formation Développeur web et web mobile a commencé au Greta sud champagne en 2019 suite à un appel d’offre de la région qui a été obtenu par notre centre. Cette volonté d’implanter cette formation diplômante est venue en réponse au constat du besoin du numérique dans le secteur professionnel régional qui y était jusque la trop absent. Cela répondait au passage au besoin d’emploi et d’insertion, qui est le rôle premier de notre organisme de formation public qui accueille tous types de profils.</p>
+                                <p> Cette formation a constitué un apport important dans le domaine du numérique à l’échelle locale et régionale et tend à évoluer avec un désir des différents acteurs qui ont mis tout ça en œuvre d’aller plus loin en mettant en place d’autres formations dans ce domaine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-12">
+                            <div>
+                                <h3><u>Evolution</u></h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <p>La formation a su évoluer au cours de ses cinq années d’existence, pour s’adapter à son public et devenir plus efficace et complète dans la professionnalisation de ses élèves. Des modules de perfectionnement à l’oral ont été inclus suite au constat de l’utilité de ces compétences aux profils présents sur les premières années, ces compétences de communications et de relations clients étant de plus en plus recherchées dans ce corps de métiers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-12">
+                            <div>
+                                <h3><u>Résultats</u></h3>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div>
+                                <p>Les résultats de la formation sont significatifs de sa réussite depuis son début, nous avons eu en 2022 un taux de réussite de 80 %. Plusieurs profils pourront en ressortir, beaucoup montent leurs entreprises, certains deviennent particulièrement pointus et parviennent à rejoindre des gros projets déjà existants, tandis que d’autres font le choix de poursuivre leur études dans le domaine puisque notre formation leur en offre la possibilité. Le décrochage a été quasi inexistant depuis le début, et c’est symptomatique de ce que le Greta a réussi à mettre en place, une formation qui mobilise particulièrement ses élèves.</p>
+                                <p>Au fil de ses différentes promotions une véritable cohésion d’équipe à toujours pu se créer. Tout ce projet sera de nouveau mise en place pour au moins deux ans de plus puisque cette année 2023 est la première d’un renouvellement de 3 ans par la région.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN Section présentation de la formation -->
+
+            <!-- Section informations de la formation -->
+            <section id="Infos" class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h2 class="h2 shadow">Informations</h2>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <h2><u>Activités visées</u></h2>
+                        </div>
+                        <div class="col-12">
+                            <p>Le développeur web et web mobile développe ou fait évoluer des applications orientées web, ou web mobile ou les deux à la fois, en respectant les normes et standards reconnus par la profession et en suivant l'état de l'art de la sécurité informatique à toutes les étapes. Ces applications sont destinées à des internautes ou des salariés d'entreprise.</p>
+                            <p>Le développeur conçoit la partie visuelle de l'application exécutée sur le navigateur côté ordinateur client. Il ébauche la maquette des écrans de l'interface utilisateur et prévoit la navigation de l'application web ou web mobile. Il code l'ensemble avec les langages de programmation web adaptés et une architecture applicative conforme aux bonnes pratiques du développement web et web mobile. Il réalise la partie visuelle de l'application dans un premier temps de manière statique et en la rendant adaptable au contexte puis dans un deuxième temps capable d'interagir avec l'utilisateur de manière dynamique.</p>
+                        </div>
+                        <div class="mt-2 col-12">
+                           <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                            <th scope="col">N° Fiche AT</th>
+                                            <th colspan="4" scope="col">Activités types</th>
+                                            <th colspan="1" scope="col">N° Fiche CP</th>
+                                            <th colspan="4" scope="col">Compétences professionnelles</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <p>1</p>
+                                                </div>
+                                            </th>
+                                            <td colspan="4">                                          
+                                                <div>
+                                                    <p>Développer la partie front-end d'une application web ou web mobile en intégrant les recommandations de sécurité</p>
+                                                </div>                                         
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="queries">1</p> 
+                                                    <p class="queries">2</p>
+                                                    <p class="queries">3</p>
+                                                    <p class="queries">4</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="4">
+                                                <div>
+                                                    <p>Maquetter une application</p>
+                                                    <p>Réaliser ne interface utilisateur web et statique et adaptable</p>
+                                                    <p>Développer une interface utilisateur web dynamique</p>
+                                                    <p>Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div>
+                                                    <p>2</p>
+                                                </div>
+                                            </th>
+                                            <td colspan="4">
+                                                <div>
+                                                    <p>Développer la partie back-end d'une application web ou web mobile en intégrant les recommandations de sécurité</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <p class="queries">5</p>
+                                                    <p class="queries">6</p>
+                                                    <p class="queries">7</p>
+                                                    <p class="queries">8</p>
+                                                </div>
+                                            </td>
+                                            <td colspan="4">
+                                                <div>
+                                                    <p>Créer une base de données</p>
+                                                    <p>Développer les composants d'accès aux données</p>
+                                                    <p>Développer la partie back-end d'une application web ou web mobile</p>
+                                                    <p>Elaborer et mettre en oeuvre des composants dans une application de gestion de contenu ou e-commerce</p>
+                                                </div>
+                                            </td>
+                                        </tr>   
+                                    </tbody>
+                                </table>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN Section informations de la formation -->
+
+            <!-- Section biographies -->
+            <section id="Bio" class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="h2 mb-4 shadow">Biographies</h2>
+                        </div>
+                        <div class="mb-4 col-6 col-lg-2"> <!-- Abdellah -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2204.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Abdellah">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Abdellah" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2204.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel1">Abdellah GHERRAB</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Abdellah a 42 ans et a travaillé pendant 15 ans comme routier. Pour évoluer dans ses missions, il a fait un BTS transports international, aérien et maritime et Il a travaillé comme agent de transit. Dans le cadre d’une reconversion professionnelle, Abdellah a choisi de s’orienter vers le numérique afin de pouvoir utiliser son imagination débordante dans la création de sites internet. Après l’obtention de son Titre Pro, son objectif est d’acquérir de l’expérience afin de devenir freelance à terme.</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1"> Il aime les arts-martiaux et la moto.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>Je ne perds jamais soit je gagne soit j'apprends.</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/abdellah-guerrab-542569268/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_Abdellah_GUERRAB_V2.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="mb-4 col-6 col-lg-2"> <!-- Baptiste -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2202.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Baptiste">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Baptiste" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2202.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel2">Baptiste DOYON</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Baptiste a 23 ans et est originaire de Meaux. Après un baccalauréat littéraire il décide de s’orienter vers un parcours scientifique en entamant un BTS Gestion et Valorisation de la nature. N’ayant pas pu le mener à son terme il a par la suite eu des emplois dans plusieurs domaines notamment en travaillant un an en tant qu’assistant d’éducation en lycée. Il a pris la formation il y a deux ans de se réorienter dans le numérique et après s’être formé en autodidacte quelques temps il a intégré notre formation afin de poursuivre ses études par la suite pour élargir ses compétences dans le domaine.</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Je joue de la guitare, du piano et je suis passionné par les jeux-vidéos.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite></cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/baptiste-doyon/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_Baptiste_Doyon.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="mb-4 col-6 col-lg-2"> <!-- Dorian -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2193.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Dorian">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Dorian" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2193.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel3">Dorian BOYER</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Dorian a 22 ans, originaire d’Île de la Réunion, a commencé avec un Bac Pro SEN (système électroniques numériques). Ensuite, il a voulu poursuivre dans le parcours de l’aéronautique avec un BTS Maintenance Système. Suite au Covid et des problèmes de santé, Dorian n’a pu continuer dans ce domaine. Il s’est reconvertit à sa deuxième passion, qui est le numérique, il est passé sur une licence informatique à l’université de Reims. En cherchent une formation qui met en œuvre le côté pratique, il décida de continuer plutôt avec le Titre Pro développeur Web et Web mobile, proposé par le Greta Sud Champagne.
+                                                            Afin d‘approfondir ses connaissances et compétences, il désire poursuivre sa formation avec une licence et master en tant que développeur Full-stack et Web design 
+                                                            </p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="">
+                                                        <p class="text-center p-1"> Il aime jouer des jeux vidéo, l’astronomie, il aime étudier la mythologie nordique et dessiner dans ses temps perdus.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>Les rêves donnent du travail.</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/dorian-boyer-736003203/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/BOYER_DORIAN_2.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="mb-4 col-6 col-lg-2"> <!-- Fernanda -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2229.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Fernanda">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Fernanda" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2229.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel4">Fernanda MAIA</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Fernanda est brésilienne et habite en France depuis 2008. Comédienne professionnelle, elle a joué dans les théâtres français et brésiliens. Désirant changer de voie, en 2015 elle commence une licence en science politique à la Sorbonne Paris XIII et un master relations internationales à HEIP. Après l’obtention de son master en 2020, elle a travaillé au Brésil avec la Marine brésilienne et comme collaboratrice parlementaire à Brasília.
+                                                            Dû au manque des opportunités professionnelles, elle s’est redirigée vers le monde du numérique car c’est un secteur qui connait des constantes évolutions et innovations. Ainsi, elle entame une formation avec le Greta Sud Champagne dans le domaine développeur Web et Web mobile au titre professionnel. Après cette formation, elle souhaite continuer avec une licence et master soit en Devops, soit en IA (Intelligence Artificielle).
+                                                            </p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1"> Elle est passionnée par le théâtre, le cinéma, la photographie astronomique et les voyages.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center"><cite>Ne vous découragez pas, c'est souvent la dernière clef du trousseau qui ouvre la porte</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/fernanda-maia-developpeur-web-et-web-mobile/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_Fernanda_Maia.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="mb-4 col-6 col-lg-2"> <!-- Florian -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2205.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Florian">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Florian" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2205.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel5">Florian FALLET</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Florian a 22 ans et originaire de St. Germain. Il a fait un Bac STI2D, spécialité systèmes informatiques et numérique. Il a toujours été passionné par l’informatique et les jeux vidéo comme Kingdom Hearts. Après le Titre Pro, l’objectif de Florian est de commencer à travailler en mode remote, de préférence en tant que développeur Front-end.</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Il aime les jeux vidéo, les mangas et les voyages.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>Le travail en équipe sera toujours mieux que le travail en solo.</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/f-fallet/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_Florian_Fallet_New.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="mb-4 col-6 col-lg-2"> <!-- Guillaume -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2207.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Guillaume">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Guillaume" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2207.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel6">Guillaume DEPONTAILLER</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Guillaume a 26 ans, originaire de Troyes, il a fait un Bac STI2D. Voulant travailler à l’international, il a étudié le japonais. Pour des questions de santé, il a fait une pause afin de se rétablir. Suite à son rétablissement, il commence à travailler et à se préparer pour la formation développeur Web et Web mobile avec le Greta Sud Champagne. Après l’obtention de son diplôme, il souhaite travailler mais il reste ouvert à la possibilité de continuer sa formation de développeur. Côté hobbies, Guillaume est un amoureux de la musique, particulièrement, de bandes sons. Il aime la marche, se promener et découvrir des nouveaux lieux.</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1"> Il est passionné par la culture japonaise, sa langue, sa culture et sa tradition.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>J'adore innover ma créativité !</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn" href="https://www.linkedin.com/in/guillaume-depontailler-311b62228/" role="button">Mon Linkedin</a>
+                                                    <a class="btn" href="./Sources/Cv/CV_-_Guillaume_DEPONTAILLER_20-03-2023.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="col-6 col-lg-2"> <!-- Kévin -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2196.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Kevin">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Kevin" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2196.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel7">Kévin VINCENT</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Kevin a 22 ans et est originaire de Troyes. Il a étudié à St. Joseph pour devenir agent immobilier et a travaillé après l’obtention de son diplôme. Durant son temps libre, il aime jouer sur son ordinateur, faire de la musculation, jouer au foot et aider son père dans son métier de carreleur. Passionné par les jeux vidéo, Kevin utilise des logiciels pour modifier l’aspect ou la performance d’un jeu. Ainsi, il a décidé de se tourner vers le codage car son rêve est de créer son propre jeux vidéo. 
+                                                            Pour concrétiser ses ambitions, il s’est inscrit à la formation « Parcours vers le métier du numérique » au Greta de Troyes. Il poursuit ses études avec le Titre Pro développeur web et web mobile. Kevin souhaite travailler après l’obtention de son Titre Pro, acquérir de l’expérience pour plus tard, avoir sa propre entreprise de développement de jeux vidéo.
+                                                        </p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Il est passionné de jeux-vidéos.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>Je suis quelqu'un de curieux et qui veut toujours apprendre.</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/k%C3%A9vin-vincent-3011a7224/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_Kevin_VINCENT.pdf.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="col-6 col-lg-2"> <!-- Louis -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2231.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Louis">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Louis" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2231.JPG"" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel8">Louis PLIVARD</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Louis a 21 ans et après l’obtention de son Bac STI2D, il a suivi une 1ère année de licence d’Histoire à la Université de Troyes. Ensuite, il a effectué un service civique de 6 mois en tant qu’agent d’accueil à Pôle Emploi. Il a intégré le Titre Professionnel car c’est le moyen plus rapide de se professionnaliser et avoir une formation plus orienté entreprise.  Il souhaite poursuivre ses études avec une licence pro MMI (métiers de multimédia et de l’internet). Après sa formation, il ambitionne de travailler au sein d’une start-up pour le côté dynamique et innovant. Louis a un projet à long-terme ; il souhaite ouvrir un Coffee Shop qui s’appellera « Le Tricot », où le tricot se mélangera aux effluves des arabicas.</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1"> Il aime les jeux-vidéo First Person Shooter (FPS), streaming et montage vidéo.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>J'aime me lancer des défis.</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/louis-plivard/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/PLIVARD_LOUIS.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="col-6 col-lg-2"> <!-- Mickaël -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2203.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Mickael">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Mickael" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2203.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel9">Mickaël PONCELET</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Mickael a 27 ans, originaire de Romilly-sur-Seine. Électricien de formation, il est en pleine reconversion professionnelle. Passionné par les innovations informatiques, il souhaite évoluer dans un domaine qui évolue constamment et désire devenir développeur professionnel. Il veut continuer sa formation avec une licence en informatique, pour la suite accumuler de l’expérience car son objectif final est de devenir chef de projet / formateur. Mickael aime les jeux vidéo pour le côté scénaristique et graphique, le sport et divers domaines...</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Je suis passioné par les jeux par le côté scénaristique et graphique, je suis partisant du sport, je pratique la musculation et la boxe. J'ai également d'autres petites passion.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>Je suis quelqu'un qui veut <b>apprendre </b> et <b>évoluer</b> !</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/micka%C3%ABl-poncelet-538b8624b/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV MICKA.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="col-6 col-lg-2"> <!-- Nicolas -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2201.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Nicolas">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Nicolas" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2201.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel10">Nicolas BREDIN</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Nicolas a 38 ans et a travaillé 17 ans dans la grande distribution. Actuellement en reconversion professionnelle, il a fait la formation « Parcours vers les métiers du numérique » et poursuit ses études avec le Titre Pro développeur web, où il souhaite se spécialiser sur le Back-end.
+                                                            Il désire continuer sa formation avec une licence pro, soit sur le Back-end ou les applications mobiles.
+                                                            </p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1"> Il adore les musées, spécialement le Louvre où il pourrait rester des jours à contempler et explorer les œuvres, le palais, les jardins et les parcours de visite. Il est aussi passionné par le cinéma de Tim Burton, de Quentin Tarantino et de Park Chan-wook.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <p><cite>Cinéphile et grand amateur de musées</cite></p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/nico-bredin/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_2023-03-09_Nicolas_BREDIN.pdf.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="col-6 col-lg-2"> <!-- Quentin -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2198.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Quentin">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Quentin" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" class="identity " src="./Sources/Images/IMG_2198.JPG" alt="">
+                                                   
+                                                    <h5 class="modal-title fs-3 ms-3" id="exampleModalLabel11">Quentin CLIVOT</h5>
+                                                  
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Développeur web passionné et polyvalent avec une expérience de stage récente en développement web et marketing web, une formation en découverte des métiers du numérique et une expérience professionnelle diversifiée dans les domaines de la cuisine, du génie sapeur de combat et de la restauration. Possédant des compétences en HTML, CSS, JavaScript, PHP, CMS, Framework, outils d'édition de code, Photoshop, After Effects, Premiere Pro et Illustrator. Curieux et toujours de bonne humeur, je suis motivé pour continuer à apprendre et à m'améliorer dans le domaine du développement web.</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Je suis passioné des jeux-vidéos</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                       <cite class="text-center">J'aime la technologie.</cite>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/quentin-clivot/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/CV_Quentin_Clivot.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                        <div class="col-6 col-lg-2"> <!-- Virginie -->
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="./Sources/Images/IMG_2200.JPG" style="width: 12rem;" class="identity shadow" alt="...">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn mt-2 shadow" data-bs-toggle="modal" data-bs-target="#Virginie">
+                                        Voir le profil
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="Virginie" tabindex="-1" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header d-flex justify-content-center">
+                                                    <img style="width: 8.5rem;" src="./Sources/Images/IMG_2200.JPG" class="identity shadow" alt="...">                                                     
+                                                    <h5 class="modal-title fs-2" id="exampleModalLabel12">Virginie MARCIN</h5>                                               
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mon parcours professionnel</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Virginie a 28 ans et est originaire d’Auvergne. Elle a validé un bac scientifique option arts et un BTS Métiers de la Mode et du Vêtement. Souhaitant développer ses compétences en matière commerciale, elle a également validé un BTS Management Commercial Opérationnel en VAE et une Licence LEA Anglais et Espagnol.  Son parcours professionnel l’a amené à travailler dans le domaine du prêt-à-porter en tant qu’adjointe de magasin chez Columbia, où elle s’est vu confier des missions de pilotage des innovations informatiques de l’enseigne ; expérience qui a confirmé son désir de s’orienter vers l’informatique et le numérique. Elle a décidé de se former Open Class pendant le confinement et se professionnaliser, en validant le Titre Professionnel de Développeur Web et Web Mobile. Pour la suite, elle souhaite s’orienter vers une licence et un master pro en dev web ou cybersécurité</p>
+                                                    </div>                                                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <h6 class="fs-5">Mes hobbies</h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <p class="text-center p-1">Je suis passionnée d'art et de science, j'aime également voyager et sortir.</p>
+                                                    </div>                 
+                                                    <div class="d-flex justify-content-center">
+                                                        <cite class="text-center">Quand l'art et la science se rencontrent, l'impossible devient possible.</cite>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-primary" href="https://www.linkedin.com/in/vmarsin/" role="button">Mon Linkedin</a>
+                                                    <a class="btn btn-primary" href="./Sources/Cv/cv_a_jour.pdf" role="button">Mon CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN Section biographies -->
+
+            <!-- Section remerciements -->
+            <section class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <h2 class="h2 shadow">Remerciements</h2>
+                            </div>
+                        </div>
+                        <div class="col my-3">
+                            <div>
+                                <p>Nous tenons à vous adresser nos sincères remerciements pour la chance que vous nous offrez à faire partie de cette formation. Nous vous remercions de votre confiance en nous et de la qualité de la formation, de par ses locaux, ses formateurs et toutes les personnes travaillant en ce lieu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIN Section remerciements -->
+       </main>
+       <footer>
+            <section class="mt-5 bg-light">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mt-3 d-flex justify-content-start">
+                            <a class="ms-4" href="#">
+                                <img id="GretaFooter" src="./Sources/Images/Logo.png" alt="Logo_du_Greta">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-4 d-flex justify-content-center">
+                            <a id="LinkGreta" class="text-dark" href="https://www.academiereims.fr/reseau/greta-cfa-sud-champagne/">Site du greta-cfa-sud-champagne</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-3 mt-lg-4 me-5 d-flex justify-content-end">
+                            <a id="ArrowFooter" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       </footer>     
+    </body>
+</html>
+
