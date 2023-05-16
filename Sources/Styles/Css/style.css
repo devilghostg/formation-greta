@@ -1,0 +1,103 @@
+.identity { /* Class qui concercne les Img de la section Biographie */
+    clip-path:ellipse(30% 45%); 
+}
+
+.h2 { /* All H2 */
+    color: white;
+    background-color: #eb383b;
+    border-radius: 0px 32.5px 32.5px 0px;
+    padding: 10px;
+}
+
+.btn { /* Les bouttons de déclenchement de modale */
+    background-color: #eb383b;
+    color: white;
+    clip-path: circle(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.btn:hover {
+    background-color: darkred;
+    color: white;
+}
+
+@font-face {
+    font-family:"Marianne-Bold" ;
+    src: url("/Sources/Fonts/Marianne-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family:"Marianne-Regular" ;
+    src: url("/Sources/Fonts/Marianne-Regular.otf") format("otf");
+}
+
+h1, h2, h3 {
+    font-family: "Marianne-Bold";
+}
+
+p, .btn {
+    font-family: "Marianne-Regular";
+    font-size: 17.5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) { /* Media pour téléphone */
+    table {
+        font-size: 12.5px
+    }
+    .queries {
+        margin-top: 5px;
+        margin-bottom: 55px;
+    }
+    #divTitre {
+        margin-top: 100px;
+    }
+    #Icone_arrow{
+        display: none;
+    }
+    #GretaFooter {
+        width: 80px;
+    }
+    #ArrowFooter {
+        width: 25px;
+    }
+    #LinkGreta {
+        font-size: 52.5%;      
+    }
+}
+
+@media screen and (min-width: 1024px) { /* Taille mini desktop */
+    #Video{
+        margin-top: 620px;
+    }
+    #divTitre { /* Modification taille conteneur titre */
+        margin-top: 350px;
+    }
+    h1 {
+        font-size: 75px;
+    }
+    #h2 {
+        font-size: 40px;
+    }
+    #GretaFooter {
+        width: 12.5rem;
+    }
+    #ArrowFooter {
+        width: 40px;
+    }
+}
+
+#Icone_arrow {
+    color: black;
+}
+
+#Icone_arrow:hover {
+    color: #eb383b;
+}
+
+#ArrowFooter {
+    color: black;
+}
+
+#ArrowFooter:hover {
+    color: #eb383b;
+}
+
